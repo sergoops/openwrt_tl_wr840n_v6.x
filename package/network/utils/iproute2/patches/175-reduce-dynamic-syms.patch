@@ -26,7 +26,7 @@
  
  q_atm.so: q_atm.c
  	$(QUIET_CC)$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -shared -fpic -o q_atm.so q_atm.c -latm
-@@ -199,4 +200,16 @@ static-syms.h: $(wildcard *.c)
+@@ -199,4 +200,15 @@ static-syms.h: $(wildcard *.c)
  		sed -n '/'$$s'[^ ]* =/{s:.* \([^ ]*'$$s'[^ ]*\) .*:extern char \1[] __attribute__((weak)); if (!strcmp(sym, "\1")) return \1;:;p}' $$files ; \
  	done > $@
  
