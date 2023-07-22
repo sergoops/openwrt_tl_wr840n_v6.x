@@ -42,5 +42,5 @@
 };
 
 &ralinkgpio {
-	ralink,group = "p0led_an", "p2led_an", "perst", "wdt";
+	groups = "p0led_an", "p2led_an", "perst", "wdt";
 };
