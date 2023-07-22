@@ -85,6 +85,6 @@
 
 &state_default {
 	ralinkgpio: gpio {
-		ralink,function = "gpio";
+		function = "gpio";
 	};
 };
