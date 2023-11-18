@@ -201,7 +201,7 @@ CONFIG_CLEAN_IPKG=y
 CONFIG_KERNEL_BUILD_USER="user"
 CONFIG_KERNEL_BUILD_DOMAIN="tplink"
 CONFIG_KERNEL_PRINTK=y
-CONFIG_KERNEL_CRASHLOG=y
+# CONFIG_KERNEL_CRASHLOG is not set
 CONFIG_KERNEL_SWAP=y
 # CONFIG_KERNEL_DEBUG_FS is not set
 # CONFIG_KERNEL_MIPS_FPU_EMULATOR is not set
@@ -1469,7 +1469,7 @@ CONFIG_PACKAGE_urandom-seed=y
 CONFIG_PACKAGE_urngd=y
 # CONFIG_PACKAGE_usign is not set
 # CONFIG_PACKAGE_wireless-tools is not set
-# CONFIG_PACKAGE_zram-swap is not set
+CONFIG_PACKAGE_zram-swap=y
 
 #
 # Administration
@@ -1723,6 +1723,7 @@ CONFIG_PACKAGE_wireless-regdb=y
 #
 # Cryptographic API modules
 #
+CONFIG_PACKAGE_kmod-crypto-acompress=y
 # CONFIG_PACKAGE_kmod-crypto-aead is not set
 # CONFIG_PACKAGE_kmod-crypto-authenc is not set
 # CONFIG_PACKAGE_kmod-crypto-cbc is not set
@@ -1875,6 +1876,8 @@ CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
 # CONFIG_PACKAGE_kmod-lib-crc32c is not set
 # CONFIG_PACKAGE_kmod-lib-crc7 is not set
 # CONFIG_PACKAGE_kmod-lib-crc8 is not set
+CONFIG_PACKAGE_kmod-lib-lz4=y
+CONFIG_PACKAGE_kmod-lib-lzo=y
 # CONFIG_PACKAGE_kmod-lib-textsearch is not set
 
 #
@@ -2158,7 +2161,7 @@ CONFIG_PACKAGE_kmod-gpio-button-hotplug=y
 # CONFIG_PACKAGE_kmod-tpm-i2c-infineon is not set
 # CONFIG_PACKAGE_kmod-w83627hf-wdt is not set
 # CONFIG_PACKAGE_kmod-wifidog-ng is not set
-# CONFIG_PACKAGE_kmod-zram is not set
+CONFIG_PACKAGE_kmod-zram=y
 
 #
 # PCMCIA support
