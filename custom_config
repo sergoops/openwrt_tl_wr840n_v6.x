@@ -4837,7 +4837,7 @@ CONFIG_PACKAGE_miniupnpd=y
 # OpenLDAP
 #
 # CONFIG_PACKAGE_libopenldap is not set
-CONFIG_OPENLDAP_DEBUG=y
+# CONFIG_OPENLDAP_DEBUG is not set
 # CONFIG_OPENLDAP_CRYPT is not set
 # CONFIG_OPENLDAP_MONITOR is not set
 # CONFIG_OPENLDAP_DB47 is not set
